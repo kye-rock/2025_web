@@ -17,13 +17,14 @@
     }
     .container {
       position: relative;
-      width: 450px;
+      width: 420px;
       height: 560px;
       border: 1px solid #ccc;
       background: white;
+      margin-top: -140px;
     }
     .center-image {
-      width: 450px;
+      width: 420px;
       height: 560px;
       display: block;
     }
@@ -32,37 +33,52 @@
       width: 200px;
       height: 280px;
     }
-    .pos1 { top: -310px; left: -230px; } /*허임*/
-    .pos2 { top: -300px; left: 4px; }/*철수*/
-    .pos3 { top: -305px; left: 230px; } /*송하영*/
-    .pos4 { top: -290px; left: 460px; }/*김해*/
-    .pos5 { top: 10px; left: 475px; } /*민태주*/
-    .pos6 { top: 310px; left: 475px; }/*비담*/
-    .pos7 { top: 600px; left: 480px; }/*강수*/
-    .pos8 { top: 575px; left: 250px; }/*이도*/
-    .pos9 { top: 580px; left: 10px; }/*정재*/
-    .pos10 { top: 590px; left: -230px; }/*최현*/
-    .pos11 { top: 290px; left: -220px; }/*허경훈*/
-    .pos12 { top: -10px; left: -220px; }/*이윤*/
+    .r {
+      transition: transform 0.3s ease;
+    }
+
+    .r:hover {
+      transform: scale(1.5);
+      z-index: 10;
+    }
+
+    .pos1 { top: -300px; left: -210px; } /*허임*/
+    .pos2 { top: -300px; left: 5px; }/*철수*/
+    .pos3 { top: -300px; left: 220px; } /*송하영*/
+    .pos4 { top: -300px; left: 435px; }/*김해*/
+    .pos5 { top: -10px; left: 435px; } /*민태주*/
+    .pos6 { top: 290px; left: 435px; }/*비담*/
+    .pos7 { top: 575px; left: 435px; }/*강수*/
+    .pos8 { top: 575px; left: 220px; }/*이도*/
+    .pos9 { top: 575px; left: 5px; }/*정재*/
+    .pos10 { top: 575px; left: -210px; }/*최현*/
+    .pos11 { top: 290px; left: -210px; }/*허경훈*/
+    .pos12 { top: -10px; left: -210px; }/*이윤*/
   </style>
 </head>
+
 <body>
   <div class="container">
     <img src="image/0.png" alt="center" class="center-image" />
     <a href="01.html" target="_blank">
-      <img src="image/1.png" class="pos pos1" alt="1" /></a>
+      <img src="image/1.png" class="pos pos1 r" alt="1" /></a>
     <a href="02.html" target="_blank">
-    <img src="image/2.png" class="pos pos2" alt="2" /></a>
-    <img src="image/3.png" class="pos pos3" alt="3" />
-    <img src="image/4.png" class="pos pos4" alt="4" />
-    <img src="image/5.png" class="pos pos5" alt="5" />
-    <img src="image/6.png" class="pos pos6" alt="6" />
-    <img src="image/7.png" class="pos pos7" alt="7" />
-    <img src="image/8.png" class="pos pos8" alt="8" />
-    <img src="image/9.png" class="pos pos9" alt="9" />
-    <img src="image/10.png" class="pos pos10" alt="10" />
-    <img src="image/11.png" class="pos pos11" alt="11" />
-    <img src="image/12.png" class="pos pos12" alt="12" />
+    <img src="image/2.png" class="pos pos2 r" alt="2" /></a>
+    <img src="image/3.png" class="pos pos3 r" alt="3" />
+    <img src="image/4.png" class="pos pos4 r" alt="4" />
+    <img src="image/5.png" class="pos pos5 r" alt="5" />
+    <img src="image/6.png" class="pos pos6 r" alt="6" />
+    <img src="image/7.png" class="pos pos7 r" alt="7" />
+    <img src="image/8.png" class="pos pos8 r" alt="8" />
+    <img src="image/9.png" class="pos pos9 r" alt="9" />
+    <img src="image/10.png" class="pos pos10 r" alt="10" />
+    <img src="image/11.png" class="pos pos11 r" alt="11" />
+    <img src="image/12.png" class="pos pos12 r" alt="12" />
+    <p style="text-align:center; margin-top: 310px; font-family: 'KoPub Batang', serif; letter-spacing: -0.07em; font-size: 30px; ">김남길 필모 그래피</p>
+    <h1 style="text-align:center; font-size: 73px; margin-top: -15px; font-family: 'KoPub Batang', serif; letter-spacing: -0.13em;">뷰티인사이드</h1><br>
+    <p style="text-align:center; font-family: 'KoPub Batang', serif; letter-spacing: -0.07em; font-size: 30px; margin-top: -40px">제작 강예은 | 출연 김남길</p>
   </div>
+
+
 </body>
 </html>
