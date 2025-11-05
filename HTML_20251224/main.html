@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8" />
-  <title>김남길 필모 소개</title>
-  <style>
-    html, body {
+    <meta charset="utf-8" />
+    <title>김남길 필모 소개</title>
+    <style>
+        html, body {
       height: 100%;
       margin: 0;
+    }
+    nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 300px;
+    background-color: #333;
+    padding-top: 20px;
+    z-index: 1000;
+    }
+
+    nav a {
+    display: block;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    transition: padding-left 0.3s ease; /* 부드러운 애니메이션 */
+    }
+
+    nav a:hover {
+    background-color: #555;
+    padding-left: 30px; /* 왼쪽 안쪽 여백을 늘려서 오른쪽으로 밀려난 효과 */
     }
     body {
       display: flex;
@@ -56,39 +80,56 @@
     .pos12 { top: -10px; left: -210px; }/*이윤*/
   </style>
 </head>
+<nav>
+    <a href="https://www.gil-story.com/" target="_blank" >길스토리NGO</a>
+    <a href="http://gilstoryent.com/" target="_blank">길스토리ENT</a>
+    <a href="https://www.instagram.com/namgildaero" target="_blank">인스타그램</a>
+    <a href="https://gil-story.com/bbs_list.php?tb=creator_KimNamGil" target="_blank">블로그</a>
+    <form action="/guestbook" method="get" style="display: flex; flex-direction: column; align-items: center; text-align: center; margin-top: 1000px;">
+        <label style="color: white; font-family: 'Pretendard', sans-serif; margin-bottom: 5px; margin-left: 80px; align-self: flex-start;">
+            이름
+        </label>
+        <input type="text" name="name" required style="width:130px; margin-bottom: 20px;">
+        <label style="color: white; font-family: 'Pretendard', sans-serif; margin-bottom: 5px; margin-left: 80px; align-self: flex-start;">
+            메시지
+        </label>
+        <textarea name="message" required style="width:130px; height:100px; margin-bottom: 20px;"></textarea>
+        <button type="submit" style="font-family: 'Pretendard', sans-serif; serif;">방명록</button>
+    </form>
+</nav>
 
 <body>
-  <div class="container">
-    <a href="kim.html" target="_blank">
-      <img src="image/0.png" alt="center" class="center-image" />
-    <a href="01.html" target="_blank">
-      <img src="image/1.png" class="pos pos1 r" alt="1" /></a>
-    <a href="02.html" target="_blank">
-      <img src="image/2.png" class="pos pos2 r" alt="2" /></a>
-    <a href="03.html" target="_blank">
-      <img src="image/3.png" class="pos pos3 r" alt="3" /></a>
-    <a href="04.html" target="_blank">
-      <img src="image/4.png" class="pos pos4 r" alt="4" /></a>
-    <a href="05.html" target="_blank">
-      <img src="image/5.png" class="pos pos5 r" alt="5" /></a>
-    <a href="06.html" target="_blank">
-      <img src="image/6.png" class="pos pos6 r" alt="6" /></a>
-    <a href="07.html" target="_blank">
-      <img src="image/7.png" class="pos pos7 r" alt="7" /></a>
-    <a href="08.html" target="_blank">
-      <img src="image/8.png" class="pos pos8 r" alt="8" /></a>
-    <a href="09.html" target="_blank">
-      <img src="image/9.png" class="pos pos9 r" alt="9" /></a>
-    <a href="10.html" target="_blank">
-      <img src="image/10.png" class="pos pos10 r" alt="10" /></a>
-    <a href="11.html" target="_blank">
-      <img src="image/11.png" class="pos pos11 r" alt="11" /></a>
-    <a href="12.html" target="_blank">
-      <img src="image/12.png" class="pos pos12 r" alt="12" /></a>
-
-    <p style="text-align:center; margin-top: 310px; font-family: 'KoPub Batang', serif; letter-spacing: -0.07em; font-size: 30px; ">김남길 필모 그래피</p>
-    <h1 style="text-align:center; font-size: 73px; margin-top: -15px; font-family: 'KoPub Batang', serif; letter-spacing: -0.13em;">뷰티인사이드</h1><br>
-    <p style="text-align:center; font-family: 'KoPub Batang', serif; letter-spacing: -0.07em; font-size: 30px; margin-top: -40px">제작 강예은 | 출연 김남길</p>
-  </div>
+    <div class="container">
+        <a href="kim.html" target="_blank">
+            <img src="image/0.png" alt="center" class="center-image" />
+            <a href="01.html" target="_blank">
+                <img src="image/1.png" class="pos pos1 r" alt="1" /></a>
+            <a href="02.html" target="_blank">
+                <img src="image/2.png" class="pos pos2 r" alt="2" /></a>
+            <a href="03.html" target="_blank">
+                <img src="image/3.png" class="pos pos3 r" alt="3" /></a>
+            <a href="04.html" target="_blank">
+                <img src="image/4.png" class="pos pos4 r" alt="4" /></a>
+            <a href="05.html" target="_blank">
+                <img src="image/5.png" class="pos pos5 r" alt="5" /></a>
+            <a href="06.html" target="_blank">
+                <img src="image/6.png" class="pos pos6 r" alt="6" /></a>
+            <a href="07.html" target="_blank">
+                <img src="image/7.png" class="pos pos7 r" alt="7" /></a>
+            <a href="08.html" target="_blank">
+                <img src="image/8.png" class="pos pos8 r" alt="8" /></a>
+            <a href="09.html" target="_blank">
+                <img src="image/9.png" class="pos pos9 r" alt="9" /></a>
+            <a href="10.html" target="_blank">
+                <img src="image/10.png" class="pos pos10 r" alt="10" /></a>
+            <a href="11.html" target="_blank">
+                <img src="image/11.png" class="pos pos11 r" alt="11" /></a>
+            <a href="12.html" target="_blank">
+                <img src="image/12.png" class="pos pos12 r" alt="12" /></a>
+            <p style="text-align:center; margin-top: 310px; font-family: 'KoPub Batang', serif; letter-spacing: -0.07em; font-size: 30px; ">김남길 필모 그래피</p>
+            <h1 style="text-align:center; font-size: 73px; margin-top: -15px; font-family: 'KoPub Batang', serif; letter-spacing: -0.13em;">뷰티인사이드</h1><br>
+            <p style="text-align:center; font-family: 'KoPub Batang', serif; letter-spacing: -0.07em; font-size: 30px; margin-top: -40px">제작 강예은 | 출연 김남길</p>
+    </div>
 </body>
+
 </html>
