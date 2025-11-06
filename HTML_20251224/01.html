@@ -1,65 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" />
-  <title>김남길 필모 소개</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
+    <meta charset="utf-8" />
+    <title>필모 소개</title>
+    <style>
+        /* 전체 문서 여백, 패딩 제거 및 100% 높이 설정 */
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
     }
+    /* 좌측 네비게이션 영역 */
     nav {
-      width: 40%;
-      height: 100vh;
-      float: left;
-      display: flex;
-      align-items: center;
+        width: 40%;
+        height: 100vh;
+        float: left;
+        display: flex;
+        align-items: center;
     }
+    /* 컨텐츠 섹션 */
     section {
-      width: 60%;
-      height: 100vh;
-      float: right;
-      display: flex;
-      align-items: center;
+        width: 60%;
+        height: 100vh;
+        float: right;
+        display: flex;
+        align-items: center;
+        margin-top: -40px;
     }
+    /* 네비게이션 내 포스터 이미지 크기, 여백 */
     .poster-img {
-      margin-left: 300px;
-      width: 600px;
-      height: 800px;
+        margin-left: 300px;
+        width: 600px;
+        height: 800px;
     }
+    /* iframe 스타일 */
     .content-frame {
-      width: 70%;
-      height: 800px;
-      margin-left: -40px;
-      border: none;
+        width: 70%;
+        height: 800px;
+        margin-left: -40px;
+        border: none;
     }
+    /* 홈 컨테이너 위치 조정 */
     .home-container {
-      margin-left: 300px;
-      margin-top: -1100px;
+        margin-left: 300px;
+        margin-top: -1100px;
     }
+    /* 홈 아이콘의 투명도, 크기 설정 */
     .home-icon {
-      opacity: 0.2;
-      width: 100px;
-      height: 100px;
+        opacity: 0.2;
+        width: 100px;
+        height: 100px;
     }
-  </style>
+    </style>
 </head>
 
 <body>
-  <nav>
-    <a href="https://youtu.be/q-JRz1envUg?si=_nS8boh7LfuxNdgO" target="_blank">
-      <img src="wb_image/1_poster.png" alt="01_poster" class="poster-img" /></a>
-  </nav>
-
-  <section>
-    <iframe src="01_right.html" name="01_right" class="content-frame"></iframe>
-
-    <div class="home-container">
-      <a href="main.html" target="_top">
-        <img src="icon/home.png" alt="home" class="home-icon" />
-      </a>
-    </div>
-  </section>
+    <!-- 좌측 네비게이션 바 -->
+    <nav>
+        <div>
+            <!-- 외부 유튜브 링크, 새 탭에서 열림 -->
+            <a href="https://youtu.be/q-JRz1envUg?si=_nS8boh7LfuxNdgO" target="_blank">
+                <img src="image/1_poster.png" alt="01_poster" class="poster-img" />
+            </a>
+            <!-- 오디오 컨트롤러 -->
+            <audio src="audio/LiveUpToYourName.mp3" controls loop style="display: block; margin-top: 20px; margin-left: 450px;">
+            </audio>
+        </div>
+    </nav>
+     <!-- 우측 컨텐츠 영역 -->
+    <section>
+        <!-- iframe을 통해 다른 HTML 문서 삽입, 콘텐츠 영역 -->
+        <iframe src="01_right.html" name="01_right" class="content-frame"></iframe>
+        <!-- 홈 버튼 -->
+        <div class="home-container">
+            <a href="main.html" target="_top">
+                <img src="icon/home.png" alt="home" class="home-icon" />
+            </a>
+        </div>
+    </section>
 </body>
+
 </html>
